@@ -3,4 +3,15 @@
   import { family, rootId } from "#lib/data.ts";
 </script>
 
-<FamilyTree {family} {rootId} />
+<div>
+  <div id="title">Descendents of the Great</div>
+  <FamilyTree {family} {rootId} />
+</div>
+
+<style>
+  #title {
+    font-size: 4rem;
+    text-align: center;
+    font-family: "Arial";
+  }
+</style>
